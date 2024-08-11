@@ -9,7 +9,7 @@ const SubscriberList = () => {
     useEffect(() => {
         const fetchSubscribers = async () => {
             try {
-                const response = await axios.get('http://localhost:3000/api/subscribers');
+                const response = await axios.get('https://newsletterbackend.onrender.com/api/subscribers');
                 setSubscribers(response.data);
             } catch (error) {
                 console.error('Error fetching subscribers:', error);

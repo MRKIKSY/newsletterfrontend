@@ -9,7 +9,7 @@ const SubscriptionForm = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch('http://localhost:3000/api/subscribe', {
+      const response = await fetch('https://newsletterbackend.onrender.com/api/subscribe', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
